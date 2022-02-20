@@ -6,7 +6,6 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <link rel="stylesheet" href="tailwind.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,6 +34,7 @@
       </button>
     </div>
   </nav>
+ 
   <!--Nav Links-->
   <div class="hidden md:block">
     <ul class="flex justify-center shadow-md shadow-emerald-300 md:space-x-10 md:p-2">
@@ -106,16 +106,22 @@
         Login
       </li>
     </ul>
-  </div>
+ 
   <!--Mobile Nav End-->
   <!--Navbar End-->
 
+  
+  
   <!--Hero Start-->
-  <div class="flex m-2 mt-5" id="heroElement">
-    <img class="shadow-2xl rounded-xl shadow-emerald-600" src="source/college_hero.jpg" alt="" />
+  <div class="relative flex m-2 mt-5 overflow-hidden shadow-2xl rounded-xl shadow-emerald-600" id="heroElement">
+     <!--text animation-->
+   <div class="absolute w-full bg-black h-[100%] opacity-40 flex justify-center items-center">
+    <h1 class="font-extrabold text-center text-white text-7xl bigline">Caset College</h1>
+  </div>
+    <img class="" src="source/college_hero.jpg" alt="" />
   </div>
   <!--End of Hero-->
-
+</div>
   <!--notifications large screen-->
 
   <div class="flex">
@@ -149,7 +155,7 @@
       <div class="flex flex-col items-center p-4 m-5 mt-5 space-y-2 shadow-lg rounded-xl shadow-emerald-600"
         id="#heroElement">
         <h2 class="text-xl font-bold text-center">WELCOME TO CASET COLLEGE</h2>
-        <span class="font-medium text-center font-space">
+        <span class="text-sm font-light md:text-base md:font-medium font-space">
           We welcome you to a great future in the fast expanding field of
           Information Technology (I.T.) As you must already be aware, the
           Prime Minister of India has identified I.T. as the key growth area
@@ -177,7 +183,7 @@
         <h1 class="flex justify-center p-5 m-auto text-xl font-bold font-space md:hidden">
           Prof. Vinod Vishen
         </h1>
-        <span class="p-5 m-auto font-medium text-justify font-space">
+        <span class="p-5 m-auto text-sm font-light md:text-base md:font-medium font-space">
           <h1 class="justify-center hidden p-5 m-auto text-xl font-bold font-space md:block">
             Prof. Vinod Vishen
           </h1>
@@ -256,7 +262,7 @@
     <div class="p-2 m-5 space-y-5 text-center shadow-2xl rounded-xl md:w-[50%] shadow-emerald-600" id="about-us">
       <h1 class="text-xl font-bold text-center">ABOUT US</h1>
       <h3 class="p-5 text-2xl font-poppins">Caset College Of Computer Science & Engineering</h3>
-      <span class="p-5 m-auto font-medium text-justify font-space">CASET was started in the year 1974 by Prof. C. L. Vishen as a lab
+      <span class="p-5 m-auto text-sm font-light md:text-base md:font-medium font-space">CASET was started in the year 1974 by Prof. C. L. Vishen as a lab
         school for his research work in the area of education and school
         management. The school soon achieved fame as a premier school among
         the people of the valley. Since then CASET has grown in many
@@ -302,7 +308,9 @@
       </span>
   </div>
   <!--Script Links-->
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
   <script src="app.js"></script>
 </body>
