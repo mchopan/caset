@@ -15,12 +15,12 @@ module.exports = {
       },
       keyframes: {
         scrollingX: {
-          '0%': { transform: 'translateX(90vw)' },
-          '100%': { transform: 'translateX(-150vw)' }
+          '0%': { transform: 'translateX(100vw)' },
+          '100%': { transform: 'translateX(-200vw)' }
         },
         scrollingY: {
-          '0%': { transform: 'translateY(90vw)' },
-          '100%': { transform: 'translateY(-150vw)' }
+          '0%': { transform: 'translateY(80vw)' },
+          '100%': { transform: 'translateY(-180vw)' }
         }
       },
     },

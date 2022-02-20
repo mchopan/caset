@@ -690,21 +690,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @-webkit-keyframes scrollingY {
   0% {
-    transform: translateY(90vw);
+    transform: translateY(80vw);
   }
 
   100% {
-    transform: translateY(-150vw);
+    transform: translateY(-180vw);
   }
 }
 
 @keyframes scrollingY {
   0% {
-    transform: translateY(90vw);
+    transform: translateY(80vw);
   }
 
   100% {
-    transform: translateY(-150vw);
+    transform: translateY(-180vw);
   }
 }
 
@@ -715,21 +715,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @-webkit-keyframes scrollingX {
   0% {
-    transform: translateX(90vw);
+    transform: translateX(100vw);
   }
 
   100% {
-    transform: translateX(-150vw);
+    transform: translateX(-200vw);
   }
 }
 
 @keyframes scrollingX {
   0% {
-    transform: translateX(90vw);
+    transform: translateX(100vw);
   }
 
   100% {
-    transform: translateX(-150vw);
+    transform: translateX(-200vw);
   }
 }
 
@@ -843,6 +843,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-around {
   justify-content: space-around;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1127,6 +1135,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.5rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -1137,6 +1155,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .leading-relaxed {
@@ -1258,6 +1280,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.shadow-black {
+  --tw-shadow-color: #000;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .shadow-gray-900 {
   --tw-shadow-color: #111827;
   --tw-shadow: var(--tw-shadow-colored);
@@ -1265,11 +1292,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .shadow-green-600 {
   --tw-shadow-color: #16a34a;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.shadow-black {
-  --tw-shadow-color: #000;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -1441,23 +1463,27 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: fit-content;
   }
 
+  .md\:w-\[50\%\] {
+    width: 50%;
+  }
+
   @-webkit-keyframes scrollingX {
     0% {
-      transform: translateX(90vw);
+      transform: translateX(100vw);
     }
 
     100% {
-      transform: translateX(-150vw);
+      transform: translateX(-200vw);
     }
   }
 
   @keyframes scrollingX {
     0% {
-      transform: translateX(90vw);
+      transform: translateX(100vw);
     }
 
     100% {
-      transform: translateX(-150vw);
+      transform: translateX(-200vw);
     }
   }
 
