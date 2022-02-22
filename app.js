@@ -7,7 +7,7 @@ const navButton = document.querySelector('#navButtons');
 const navbar = document.querySelector('.container');
 
 hamBurger.addEventListener('click', function () {
-    gsap.from("#navButtons", { y: -400, duration: 0.7 });
+    gsap.from("#navButtons", { y: -400, duration: 0.5 });
     navbar.classList.add("shadow-md");
     if (navButton.classList != 'hidden') {
         navButton.classList.add("hidden");
@@ -25,8 +25,8 @@ function pullFromX() {
     gsap.from("#navButtons", { y: 400, duration: 0.7 });
 };
 
-TweenLite.set('.introline, .bigline',{x:'-101%'})
+TweenLite.set('.introline, .bigline',{x:'101%'})
 
-var lines = new TimelineMax({repeat:5, yoyo:true, repeatDelay:2})
+var lines = new TimelineMax({repeat:-1, yoyo:true, repeatDelay:2})
 .to('.bigline',1,{x:'0%'})
 .to('.introline',1,{x:'0%'}, "+=0.3")
