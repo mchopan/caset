@@ -25,7 +25,7 @@ function pullFromX() {
     gsap.from("#navButtons", { y: 400, duration: 0.7 });
 };
 
-TweenLite.set('.introline, .bigline',{x:'101%'})
+TweenLite.set('.introline, .bigline',{x:'200%'})
 
 var lines = new TimelineMax({repeat:-1, yoyo:true, repeatDelay:2})
 .to('.bigline',1,{x:'0%'})
